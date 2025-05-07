@@ -1,4 +1,3 @@
- import link from "next/link"
  import type {ArticleItem} from "@/types";
  import Link from "next/link";
 interface Props{
