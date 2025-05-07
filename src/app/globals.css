@@ -1,26 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.font-poppins {
+    @apply font-(family-name:--font-poppins)
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-coromorantGaramond {
+    @apply font-(family-name:--font-cormorant-garamond)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.article {
+    @apply flex flex-col gap-3 font-(family-name:--font-poppins) text-lg tracking-wide mb-20
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.article > h1 {
+    @apply font-(family-name:--font-cormorant-garamond) text-4xl text-center
+}
+
+.article > h2 {
+    @apply font-(family-name:--font-cormorant-garamond) text-3xl text-center;
 }
